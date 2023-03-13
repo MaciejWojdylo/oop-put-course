@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Dog
+{
+    public:
+    string name;
+    int id;
+    void wrt();
+};
+void Dog::wrt()
+{
+    cout<<"Dog Id."<<id<<" "<<name<<endl;
+}
+class Cat
+{
+    public:
+    string name2;
+    int id;
+    void wrt2();
+};
+void Cat::wrt2()
+{
+    cout<<"Cat Id."<<id<<" "<<name2<<endl;
+}
+int main()
+{
+    class Dog dog;
+    class Cat cat;
+    cout<<"Id dog:"<<endl;
+    cin>>dog.id;
+    cout<<"Dog Name"<<endl;
+    cin>>dog.name;
+    cout<<"Id cat:"<<endl;
+    cin>>cat.id;
+    cout<<"Cat Name:"<<endl;
+    cin>>cat.name2;
+    dog.wrt();
+    cat.wrt2();
+    
+    return 0;
+}
