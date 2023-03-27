@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Hotel
+{
+    public:
+    Hotel(int,string);
+    Hotel(string);
+    int room_oneperson;
+    string name;
+    void print();
+};
+Hotel::Hotel(int room_count,string nick)
+{
+    name=nick;
+    room_oneperson=room_count;
+}
+Hotel::Hotel(string nick):Hotel::Hotel(0,nick)
+{
+    
+}
+void Hotel::print()
+{
+    cout<<name<<" "<<room_oneperson<<endl;
+}
+
+int main() {
+    int size;
+    cout<<"first size:";
+    cin>>size;
+    Hotel a(size,"Cazzo");
+    cout<<"secound size:";
+    cin>>size;
+    Hotel b(size,"Madera");
+    a.print();
+    b.print();
+    Hotel c("TATSDSA");
+    c.print();
+    return 0;
+}
