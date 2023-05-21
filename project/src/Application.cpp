@@ -15,7 +15,8 @@ int main() {
         try
         {
             pizza = menu->makePizza();
-        } catch (const exception &e)
+        }
+        catch (const exception &e)
         {
 #ifdef _WIN32
             system("cls");

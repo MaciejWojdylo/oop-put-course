@@ -19,7 +19,7 @@ std::string Food::Fake::Ingredients()
     return "Dough\nCheese\nHam";
 }
 
-std::vector<std::string> Food::Allergens()
+std::vector<std::string> Food::Fake::Allergens()
 {
     return {"gluten", "cheese", "meat"};
 }
